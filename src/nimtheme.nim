@@ -38,6 +38,14 @@ proc main*() =
             of 'q': fore[cur].r = min(fore[cur].r + 1 , 255)
             of 'w': fore[cur].g = min(fore[cur].g + 1 , 255)
             of 'e': fore[cur].b = min(fore[cur].b + 1 , 255)
+            of 'f':
+              fore[cur].r = max(fore[cur].r - 1 , 0)
+              fore[cur].g = max(fore[cur].g - 1 , 0)
+              fore[cur].b = max(fore[cur].b - 1 , 0)
+            of 'r':
+              fore[cur].r = min(fore[cur].r + 1 , 255)
+              fore[cur].g = min(fore[cur].g + 1 , 255)
+              fore[cur].b = min(fore[cur].b + 1 , 255)
             of '-': cur = 10
             of 'i':
               echo "text: "
