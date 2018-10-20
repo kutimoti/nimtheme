@@ -21,6 +21,7 @@ proc draw() =
         var isCur = " "
         if cur == i: isCur = "-"
         echo "$4$1: $2 [$3]" % [repr(i) , text[i].TCString(fore[i] , fore[10]) , repr(fore[i]) , isCur]
+    echo repr(fore[10])
     echo "\n\n\npress h to show help"
 
 proc main*() =
@@ -55,3 +56,4 @@ press any key
 """
               discard getch()
             else: discard "none"
+main()
